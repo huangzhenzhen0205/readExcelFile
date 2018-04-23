@@ -35,7 +35,6 @@ public class HttpUtils {
      * @throws Exception
      */
     public static JSONObject postJsonResponse(String url, String jsonData) throws Exception {
-//        String url = "https://www.juxinli.com/orgApi/rest/v2//applications/demo1";
         MediaType JSON = MediaType.parse("application/json;charset=utf-8");
         OkHttpClient client = new OkHttpClient();
         RequestBody body = RequestBody.create(JSON, jsonData);
